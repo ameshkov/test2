@@ -1,0 +1,18 @@
+! Title: Test filter
+! Description: This is a test filter to demonstrate pre-processors proposition
+! Expires: 2 days (update frequency)
+!
+! Some rules, whatever
+!
+||example.org^$third-party
+!
+!#if adguard_base
+! Including special rules for AG
+!#include adguard_supplement.txt
+! Please note, that I can add regular rules as well into this block
+||example.org^$thid-party
+!#endif
+!#if ublock_base
+! Including special rules for uBO
+!#include ublock_supplement.txt
+!#endif

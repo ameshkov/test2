@@ -1,0 +1,7 @@
+! This is just a file with some rules
+||example.org^$third-party
+
+! Bonus: it also supports !# directives
+!# if ublock_chromium
+||example.net^$third-party
+!#endif
